@@ -190,7 +190,7 @@
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(121, 26);
             this.txtMa.TabIndex = 0;
-            this.txtMa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMa_KeyPress);
+            this.txtMa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMa_KeyDown);
             // 
             // groupBox2
             // 

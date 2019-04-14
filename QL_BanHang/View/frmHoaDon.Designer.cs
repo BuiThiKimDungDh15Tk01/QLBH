@@ -186,7 +186,7 @@
             this.txtMa.Size = new System.Drawing.Size(100, 26);
             this.txtMa.TabIndex = 0;
             this.txtMa.TextChanged += new System.EventHandler(this.txtMa_TextChanged);
-            this.txtMa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMa_KeyPress);
+            this.txtMa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMa_KeyDown);
             // 
             // groupBox2
             // 
@@ -209,7 +209,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 58);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Tạo mới hóa đơn";
+            this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -217,11 +217,11 @@
             // 
             this.btnDel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDel.Location = new System.Drawing.Point(146, 141);
+            this.btnDel.Location = new System.Drawing.Point(149, 141);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(75, 58);
             this.btnDel.TabIndex = 2;
-            this.btnDel.Text = "Xóa hóa đơn";
+            this.btnDel.Text = "Xóa ";
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
@@ -410,7 +410,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 58);
             this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Lưu Hóa Đơn";
+            this.btnSave.Text = "Lưu ";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -422,7 +422,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 58);
             this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Hủy thao tác";
+            this.btnCancel.Text = "Hủy ";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 

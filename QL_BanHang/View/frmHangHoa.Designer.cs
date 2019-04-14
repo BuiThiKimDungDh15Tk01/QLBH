@@ -83,7 +83,7 @@
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(132, 26);
             this.txtMa.TabIndex = 0;
-            this.txtMa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMa_KeyPress);
+            this.txtMa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMa_KeyDown);
             // 
             // dtgvDS
             // 
@@ -259,7 +259,7 @@
             // 
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(171, 133);
+            this.btnThem.Location = new System.Drawing.Point(179, 133);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 71);
             this.btnThem.TabIndex = 15;

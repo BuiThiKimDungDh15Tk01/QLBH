@@ -57,7 +57,7 @@ namespace QL_BanHang.Model
 
         public bool AddData(HangHoaObj hhObj)
         {
-            cmd.CommandText = "Insert into tb_HangHoa values ('"+hhObj.MaHangHoa+"', N'" + hhObj.TenHangHoa + "'," + hhObj.DonGia + ", 0 )";
+            cmd.CommandText = "Insert into tb_HangHoa values ('"+hhObj.MaHangHoa+"', N'" + hhObj.TenHangHoa + "','" + hhObj.DonGia + "','"+ hhObj.SoLuong + "')";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con.Connection;
             try

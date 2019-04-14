@@ -36,7 +36,7 @@ namespace QL_BanHang.Model
 
         public bool AddData(KhachHangObj khObj)
         {
-            cmd.CommandText = "Insert into tb_KhachHang values ('" + khObj.MaKhachHang + "',N'" + khObj.TenKhachHang + "',N'" + khObj.GioiTinh + "',CONVERT(DATE,'" + khObj.NamSinh + "',103),N'" + khObj.DienThoai + "','" + khObj.DiaChi + "',0,'"+ khObj.Email + "')";
+            cmd.CommandText = "Insert into tb_KhachHang values ('" + khObj.MaKhachHang + "',N'" + khObj.TenKhachHang + "',N'" + khObj.GioiTinh + "','" + khObj.NamSinh + "',N'" + khObj.DienThoai + "','" + khObj.DiaChi + "',0,'"+ khObj.Email + "')";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con.Connection;
             try

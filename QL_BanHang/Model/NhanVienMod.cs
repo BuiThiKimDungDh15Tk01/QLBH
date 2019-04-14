@@ -36,7 +36,7 @@ namespace QL_BanHang.Model
 
         public bool AddData(NhanVienObj nvObj)
         {
-            cmd.CommandText = "Insert into tb_NhanVien values ('" + nvObj.MaNhanVien + "',N'" + nvObj.TenNhanVien + "',N'" + nvObj.GioiTinh + "',CONVERT(DATE,'" + nvObj.NamSinh + "',103),N'" + nvObj.DiaChi + "','" + nvObj.DienThoai + "','" +nvObj.MatKhau+ "')";
+            cmd.CommandText = "Insert into tb_NhanVien values ('" + nvObj.MaNhanVien + "',N'" + nvObj.TenNhanVien + "',N'" + nvObj.GioiTinh + "','" + nvObj.NamSinh + "',N'" + nvObj.DiaChi + "','" + nvObj.DienThoai + "','" +nvObj.MatKhau+ "')";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con.Connection;
             try

@@ -325,10 +325,10 @@ namespace QL_BanHang.View
             vitriclick = e.RowIndex;
         }
 
-        private void txtMa_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtMa_KeyDown(object sender, KeyEventArgs e)
         {
-            var regex = new Regex(@"[^a-zA-Z0-9\s]");
-            if (regex.IsMatch(e.KeyChar.ToString()))
+            Keys k = e.KeyCode;
+            if (k == Keys.Back || k == Keys.Delete)
             {
                 e.Handled = true;
             }

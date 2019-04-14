@@ -57,7 +57,7 @@ namespace QL_BanHang.Model
 
         public bool AddData(HoaDonObj hdObj)
         {
-            cmd.CommandText = "insert into tb_HoaDon values ('" + hdObj.MaHoaDon + "', CONVERT (date,'" + hdObj.NgayLap + "',103),'" + hdObj.NguoiLap + "','" + hdObj .KhachHang+ "')";
+            cmd.CommandText = "insert into tb_HoaDon values ('" + hdObj.MaHoaDon + "','" + hdObj.NgayLap + "','" + hdObj.NguoiLap + "','" + hdObj.KhachHang + "')";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con.Connection;
             try

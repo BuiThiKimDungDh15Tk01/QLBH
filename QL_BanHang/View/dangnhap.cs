@@ -11,9 +11,18 @@ namespace QL_BanHang.View
 {
     public partial class dangnhap : Form
     {
+        private string user;
+        private string pass;
+
         public dangnhap()
         {
             InitializeComponent();
+        }
+
+        public dangnhap(string user, string pass)
+        {
+            this.user = user;
+            this.pass = pass;
         }
 
         private void Form1_Load(object sender, EventArgs e)
